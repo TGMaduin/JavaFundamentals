@@ -32,6 +32,33 @@ public class Main {
                 isLeapYear = true;
             }
         }
-        IO.print(year + " is" + (isLeapYear ? "" : " NOT") + " a leap year");
+        IO.println(year + " is" + (isLeapYear ? "" : " NOT") + " a leap year");
+
+        // --------- EXERCISE 3 ---------
+
+        Item item1 = new Item("Apple", 2, 15.00);
+        Item item2 = new Item("Milk", 1, 22.50);
+        Item item3 = new Item("Bread", 3, 18.00);
+        IO.println("============================");
+        IO.println("           Receipt          ");
+        IO.println("============================");
+        IO.println(item1.name + "\t" + item1.quantity + " x " + item1.price + " = " + (item1.quantity * item1.price) + " SEK");
+        IO.println(item2.name + "\t" + item2.quantity + " x " + item2.price + " = " + (item2.quantity * item2.price) + " SEK");
+        IO.println(item3.name + "\t" + item3.quantity + " x " + item3.price + " = " + (item3.quantity * item3.price) + " SEK");
+        IO.println("----------------------------");
+        IO.println("Grand total:\t  " + ((item1.quantity * item1.price) + (item2.quantity * item2.price) + (item3.quantity * item3.price)) + " SEK");
+        IO.println("============================");
+    }
+}
+
+class Item{
+    String name;
+    int quantity;
+    double price;
+
+    public Item(String n, int q, double p){
+        name = n;
+        quantity = q;
+        price = p;
     }
 }
