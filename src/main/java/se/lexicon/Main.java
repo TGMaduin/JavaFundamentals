@@ -67,6 +67,18 @@ public class Main {
         IO.print("Enter last name: ");
         String lastName = IO.readln();
         IO.println("Hello, " + firstName + " " + lastName + "! Welcome aboard.");
+
+        // --------- EXERCISE 6 ---------
+
+        IO.print("Enter first number: ");
+        nbr1 = Integer.parseInt(IO.readln());
+        IO.print("Enter second number: ");
+        nbr2 = Integer.parseInt(IO.readln());
+        IO.println(nbr1 + " + " + nbr2 + " = " + (nbr1 + nbr2));
+        IO.println(nbr1 + " - " + nbr2 + " = " + (nbr1 - nbr2));
+        IO.println(nbr1 + " * " + nbr2 + " = " + (nbr1 * nbr2));
+        IO.println(nbr1 + " / " + nbr2 + " = " + (nbr1 / nbr2));
+        IO.println(nbr1 + " / " + nbr2 + " = " + ((double)nbr1 / nbr2));
     }
 }
 
