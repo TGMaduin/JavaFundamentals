@@ -52,13 +52,21 @@ public class Main {
         // --------- EXERCISE 4 ---------
 
         int nbr1, nbr2, nbr3;
-        IO.println("Enter first number: ");
+        IO.print("Enter first number: ");
         nbr1 = Integer.parseInt(IO.readln());
-        IO.println("Enter second number: ");
+        IO.print("Enter second number: ");
         nbr2 = Integer.parseInt(IO.readln());
-        IO.println("Enter third number: ");
+        IO.print("Enter third number: ");
         nbr3 = Integer.parseInt(IO.readln());
         IO.println("Average: " + ((double)(nbr1 + nbr2 + nbr3) / 3));
+
+        // --------- EXERCISE 5 ---------
+
+        IO.print("Enter first name: ");
+        String firstName = IO.readln();
+        IO.print("Enter last name: ");
+        String lastName = IO.readln();
+        IO.println("Hello, " + firstName + " " + lastName + "! Welcome aboard.");
     }
 }
 
