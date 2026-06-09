@@ -48,6 +48,17 @@ public class Main {
         IO.println("----------------------------");
         IO.println("Grand total:\t  " + ((item1.quantity * item1.price) + (item2.quantity * item2.price) + (item3.quantity * item3.price)) + " SEK");
         IO.println("============================");
+
+        // --------- EXERCISE 4 ---------
+
+        int nbr1, nbr2, nbr3;
+        IO.println("Enter first number: ");
+        nbr1 = Integer.parseInt(IO.readln());
+        IO.println("Enter second number: ");
+        nbr2 = Integer.parseInt(IO.readln());
+        IO.println("Enter third number: ");
+        nbr3 = Integer.parseInt(IO.readln());
+        IO.println("Average: " + ((double)(nbr1 + nbr2 + nbr3) / 3));
     }
 }
 
