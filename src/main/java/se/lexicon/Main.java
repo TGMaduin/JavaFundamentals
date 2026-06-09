@@ -1,7 +1,5 @@
 package se.lexicon;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static void main() {
         // --------- EXERCISE 1 ---------
@@ -79,6 +77,16 @@ public class Main {
         IO.println(nbr1 + " * " + nbr2 + " = " + (nbr1 * nbr2));
         IO.println(nbr1 + " / " + nbr2 + " = " + (nbr1 / nbr2));
         IO.println(nbr1 + " / " + nbr2 + " = " + ((double)nbr1 / nbr2));
+
+        // --------- EXERCISE 7 ---------
+
+        IO.print("Enter seconds: ");
+        int seconds = Integer.parseInt(IO.readln());
+        int hours = seconds / 3600;
+        seconds %= 3600;
+        int minutes = seconds /60;
+        seconds %= 60;
+        IO.println(hours + ":" + minutes + ":" + seconds);
     }
 }
 
