@@ -111,6 +111,18 @@ public class Main {
                 foundNumber = true;
             }
         }
+
+        // --------- EXERCISE 9 ---------
+
+        double degreesInCelsius, degreesInFarenheit, degreesInKelvin;
+        IO.print("Enter temperature in Celsius: ");
+        degreesInCelsius = Double.parseDouble(IO.readln());
+        degreesInFarenheit = degreesInCelsius * 9 / 5 + 32;
+        degreesInKelvin = degreesInCelsius + 273.15;
+        IO.println("Celsius:\t" + degreesInCelsius + " °C");
+        IO.println("Farenheit:\t" + degreesInFarenheit + " °F");
+        IO.println("Kelvin: \t" + degreesInKelvin + " °K");
+
     }
 }
 
