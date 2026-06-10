@@ -1,5 +1,7 @@
 package se.lexicon;
 
+import java.util.Random;
+
 public class Main {
     static void main() {
         // --------- EXERCISE 1 ---------
@@ -87,6 +89,28 @@ public class Main {
         int minutes = seconds /60;
         seconds %= 60;
         IO.println(hours + ":" + minutes + ":" + seconds);
+
+        // --------- EXERCISE 8 ---------
+
+        Random rand = new Random();
+        int secret = rand.nextInt(500) + 1;
+        int guess;
+        int nbrOfGuesses = 0;
+        boolean foundNumber = false;
+        while (!foundNumber){
+            IO.print("Enter your guess: ");
+            guess = Integer.parseInt(IO.readln());
+            nbrOfGuesses++;
+            if (guess < secret){
+                IO.println("Too small!");
+            } else if (guess > secret) {
+                IO.println("Too big!");
+            }
+            else{
+                IO.println("Correct! You got it in " + nbrOfGuesses + " guesses.");
+                foundNumber = true;
+            }
+        }
     }
 }
 
